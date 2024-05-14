@@ -1,0 +1,23 @@
+1- What is web development, and why is it essential in the context of the internet?
+
+web development it's the process of creating websites online ,a website  connected to databe .
+and there are 2 types of web development : 
+- front-end website for users and there many framework can help us to creet this kind of application like (React , Angular , wordpress ...)
+- back-end  website for client to help him to manage  applications  and we use framework like ( express , node , tslint, symfony, laraval,spring-boot ..)
+all application connect to 2 different type of databale (sql  or nosql) 
+
+web development is important in the context of the internet because he make our life more easiest u don't need to  magasin or shops to buy  t'shirt or shoes just one click on website and you can buy everything , you don't need to ask people or a doctor  for help new just yo can find your answer in google or you can reach for application and ask doctor for a medicine 
+2-Have you heard of HTML? If yes, what does HTML stand for, and what is its primary purpose in web development?
+yes  i heard it , html it's mean HyperText Markup Language we use it to creet a website  insert image ,write paragraph , liste somethings, and it's focus in balise 
+
+3-Are you familiar with CSS? If yes, briefly explain what CSS is used for in web development.
+yes , we use css to make design of our website add colors, isert size  of paragraph , and to animate our site by add translation and animation 
+
+4- ave you heard of JavaScript? If yes, what is JavaScript, and why is it crucial for building interactive websites?
+
+JavaScript is an object-oriented programming language. we use javascript to make our website dynamique and to add functionalité 
+
+5- Are you familiar with React and Node.js? If yes, provide a brief description of what React and Node.js are commonly used for in web development.
+react is a front-end framework open source that we use it to  creet many user interfaces and node js is a back-end framework that we use to communicate bettwen serveur and  database by using APIs
+6-Why do you want to learn web development, and what do you hope to achieve by acquiring skills in HTML, CSS, JavaScript, React, and Node.js?
+i'm front web developper and i need to develop my skills and to learn best practrise of node and react  to search  new job  .
