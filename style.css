@@ -1,0 +1,81 @@
+
+#list1{
+    list-style-type: none; text-decoration: none; text-align: center;
+}
+
+
+#list3{
+    list-style-type: none; text-decoration: none; text-align: center;
+    margin:0;padding:5px;
+}
+li.list2{
+    display: inline ; list-style: none; margin:1%
+}
+.flex-container {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .card{
+    border-radius:20px;
+    margin:1%;
+    background-color:  #dfdfe5;
+    font-size: 30px;
+    border-radius:3%;
+    font-family:roboto, arial, helvetica
+  }
+  a{
+    text-decoration: none;
+    color: white;
+   
+  }
+  a:hover {
+    border-bottom: 1px dashed grey;
+  }
+  #textdocr{
+    list-style: none;
+  }
+  nav{
+    background-color: black;
+    height: 70px;
+
+  }
+  main{
+    margin-top:1%
+  }
+article{
+    background-color:#C5C5C5
+}
+.title{
+    background-color : #979797
+}
+.prix{
+    color : #BA0F30
+}
+#centerTitle{
+    text-align: center;
+    padding-top: 10px;
+}
+.service{
+    height:600px;
+    background-color:#91a3b0;
+    border-radius:20px;
+}
+.flexContainer{
+display:flex; 
+justify-content: space-between;
+flex-wrap: wrap;
+gap: 0.5em;
+}
+.block{
+    background-color: rgb(255 255 255); border-radius: 20px; text-align: center;
+}
+#ico{
+    color: black;font-size:30px
+}
+.contact{
+    background-image: url(image.webp);
+    background-size:cover;
+    margin-top:5%;
+    border: 1px solid black; padding: 10px;  border-radius:20px;
+}
