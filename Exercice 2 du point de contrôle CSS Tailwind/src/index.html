@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+    <link href="./output.css" rel="stylesheet">
+   
+</head>
+<body>
+    
+     <header >
+        <nav>
+            <div class=" mx-0 p-6  bg-blue-500">
+                    <div class="flex items-center  justify-between" >
+                        <div>
+                            <img class="w-28 md:w-64" src="../meme.png" alt="logo" >
+                        </div>
+                        <div class=" hidden md:flex space-x-6 ">
+                            <a href="#aticle" class="font-bold text-slate-700 hover:text-gray-200"> Article</a>
+                            <a href="#cat" class="font-bold text-slate-700 hover:text-gray-200" > Categories</a>
+                            <a href="#postMessage" class="font-bold text-slate-700 hover:text-gray-200"> Message</a>
+                            <a href="#form" class=" font-bold text-slate-700 hover:text-gray-200"> Formulaire</a>
+                        </div>
+                        <button id="mobilebtn" class="md:hidden text-2xl font-bold absolute right-4"><i class="ri-menu-line"></i>
+                        </button>
+                        <div class="md:hidden">
+                            <div id="mobilemenu" class=" absolute h-32 font-bold flex hidden flex-col my-16 mx-1 px-3 left-0 right-0 space-y-1 bg-gray-50 drop-shadow-lg border-gray-400">
+                                <a href="#aticle" class="bg-gray-50"> Article</a>
+                                <a href="#cat" class="bg-gray-50" > Categories</a>
+                                <a href="#postMessage" class="bg-gray-50"> Message</a>
+                                <a href="#form" class=" bg-gray-50"> Formulaire</a>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </nav>
+     </header>
+     <main>
+        <section id="aticle">
+            <div class="mx-auto my-12 text-center">
+                <h1 class="text-center font-bold text-4xl">Article</h1>
+                <div class="flex  flex-col mx-3 pt-6   md:space-x-6 space-y-2 md:flex-row md:space-y-0">
+                    <div class="w-full md:w-1/3 flex flex-col p-6 space-y-3 rounded-lg border border-slate-300 bg-gray-100">
+                        <img class="md:h-80" src="../art1.avif" alt="art1">
+                        <h5 class="font-bold text-sm md:text-lg ">After World Court ruling, Palestinians want action not words</h5>
+                        <p class="leading-6 text-sm h-24 overflow-hidden md:h-64">Israeli military vehicles operate in the Gazan side of the Rafah Crossing, amid the ongoing conflict between Israel and Palestinian Islamist group Hamas, in the southern Gaza Strip, in this handout image released on May 7, 2024. Israel Defense Forces/Handout via REUTERS THIS IMAGE HAS BEEN SUPPLIED BY A THIRD PARTY/File Photo
+                            Forced from her home by Israel's seven-month-long Gaza offensive, Salwa al-Masri has little hope her plight will be alleviated by a ruling from the U.N.'s top court ordering Israel to halt its offensive in Rafah.</p>
+                    </div>
+                    <div class="w-full md:w-1/3 flex flex-col p-6 space-y-3 rounded-lg border border-slate-300 bg-gray-100">
+                        <img class="md:h-80" src="../art2.avif" alt="art1">
+                        <h5 class="font-bold text-sm md:text-lg ">Exclusive: Saudi Arabia plans Aramco share sale as soon as June, sources say</h5>
+                        <p class="leading-6 text-sm">DUBAI, May 24 (Reuters) - Saudi Arabia is planning a multi-billion-dollar share sale in energy giant Aramco (2222.SE), opens new tab as soon as June in what would be one of the region's biggest stock deals, two people familiar with the matter said.
+                            The offering could raise around $10 billion, one of the people said. The preparations are ongoing and the details could still change, the sources said, who were speaking on condition of anonymity because the matter is private.
+                            </p>
+                    </div>
+                    <div class=" w-full md:w-1/3 flex flex-col p-6 space-y-3 rounded-lg border border-slate-300 bg-gray-100">
+                        <img class=" md:h-80  " src="../art3.avif" alt="art1">
+                        <h5 class="font-bold text-sm md:text-lg ">Bird flu detected in tissue samples of US dairy cow sent to slaughter, USDA says</h5>
+                        <p class="leading-6 text-sm">May 24 (Reuters) - Bird flu virus particles were found in tissue samples taken from one dairy cow sent to slaughter at a U.S. meat processing plant, but none were detected in samples from 95 other cattle, the U.S. Department of Agriculture (USDA) said on Friday.
+                            Meat from the animals was prevented from entering the nation's food supply, USDA said.
+                            Agriculture and health officials have scaled up testing of meat and dairy products and livestock, as an outbreak of bird flu has expanded in dairy cattle.</p>
+                    </div>
+                </div>
+            </div>
+         </section>
+         <section id="cat">
+            <h1 class="text-center font-bold text-4xl"> Categories </h1>
+            <div class="mt-16 grid  grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-4 ">
+                <div class="flex flow-col bg-gray-100 p-4 ">
+                    <div class="card text-center drop-shadow-2xl ">
+                        <img  class="h-64 rounded-md" src="../news.avif" alt="News">
+                        <p class="font-bold text-lg py-5 text-gray-600">News </p>
+                    </div>
+                </div>
+                <div class="flex flow-col bg-gray-100 p-4">
+                    <div class="card text-center drop-shadow-2xl" >
+                        <img class="h-64 rounded-md" src="../football.jpg" alt="Football">
+                        <p class="font-bold text-lg py-5 text-gray-600">Football </p>
+                    </div>
+                </div>
+                <div class="flex flow-col bg-gray-100 p-4">
+                    <div class="card text-center drop-shadow-2xl">
+                        <img class="h-64 rounded-md"  src="../handball.jpg" alt="Handball">
+                        <p class="font-bold text-lg py-5 text-gray-600">Handball </p>
+                    </div>
+                </div>
+                <div class="flex flow-col bg-gray-100 p-4">
+                    <div class="card text-center drop-shadow-2xl">
+                        <img class="h-64 rounded-md" src="../vole.jpg" alt="Handball">
+                        <p class="font-bold text-lg py-5 text-gray-600">volleyball  </p>
+                    </div>
+                </div>
+                <div class="flex flow-col bg-gray-100 p-4">
+                    <div class="card text-center drop-shadow-2xl">
+                        <img class="h-64 rounded-md" src="../rugb.jpg" alt="Handball">
+                        <p class="font-bold text-lg py-5 text-gray-600">rugby  </p>
+                    </div>
+                </div>
+                <div class="flex flow-col bg-gray-100 p-4">
+                    <div class="card text-center drop-shadow-2xl">
+                        <img class="h-64 rounded-md" src="../bask.jpg" alt="Handball">
+                        <p class="font-bold text-lg py-5 text-gray-600">basketball </p>
+                    </div>
+                </div>
+                <div class="flex flow-col bg-gray-100 p-4">
+                    <div class="card text-center drop-shadow-2xl">
+                        <img class="h-64 rounded-md" src="../oly.jpg" alt="Handball">
+                        <p class="font-bold text-lg py-5 text-gray-600">olympic </p>
+                    </div>
+                </div>
+            </div>
+
+         </section>
+         <section id="postMessage">
+            <div class="mx-auto my-12 text-center">
+                <h1 class="text-center font-bold text-4xl"> Post Message</h1>
+                <div class="flex  flex-col mx-3 pt-28   md:space-x-12 space-y-2 md:flex-row md:space-y-0">
+                    <div class=" md:w-1/3 flex flex-col  items-center p-6 space-y-3 rounded-lg border border-slate-300 bg-gray-100">
+                        <img class="w-16 rounded-full -mt-14" src="../msg1.jpg" alt="art1">
+                        <h5 class="font-bold text-lg text-slate-900 ">Ryan Florence</h5>
+                        <p class="text-sm  text-gray-600">   March 21, 2024 </p>
+                        <p class="text-sm text-slate-700"> i feel like an idiot for not using tailwind css until now </p>
+                    </div>
+                    <div class=" md:w-1/3 flex flex-col items-center p-6 space-y-3 rounded-lg border border-slate-300 bg-gray-100">
+                        <img class="w-16 rounded-full -mt-14" src="../msg2.jpg" alt="art1">
+                        <h5 class="font-bold text-sm md:text-lg ">Debbie O'Brien</h5>
+                        <p class="text-sm  text-gray-600">   March 22, 2024 </p>
+                        <p class="text-sm text-slate-700">Skip to the end Use tailwaind css</p>
+                    </div>
+                    <div class="  md:w-1/3 flex flex-col items-center p-6 space-y-3 rounded-lg border border-slate-300 bg-gray-100">
+                        <img class=" w-16 rounded-full -mt-14 " src="../msg3.jpg" alt="art1">
+                        <h5 class="font-bold text-sm md:text-lg ">Guillermo Rauch</h5>
+                        <p class="text-sm  text-gray-600">   March 23, 2024 </p>
+                        <p class="text-sm text-slate-700">if i had recommend a way of getting into programming today , it would be html with tailwind</p>
+                      </div>
+                </div>
+                
+            </div>
+         </section>
+         <section id="form" class="items-center bg-blue-400">
+            <h1 class="text-center text-4xl pt-5">   Formulaire     </h1>
+            <form  class="mt-5 mx-5 drop-shadow-lg p-5">
+                <div class="mb-3">
+                    <label for="name" class="block">Nom : </label>
+                    <input type="text" class="border-blue-200 border-2 p-2 rounded-sm w-80 md:w-96">
+                </div>
+                <div>
+                    <label for="name" class="block">Prenom : </label>
+                    <input type="text" class="border-blue-200 border-2 p-2 rounded-sm w-80 md:w-96">
+                </div>
+                <div>
+                    <label for="name" class="block">Email : </label>
+                    <input type="email" class="border-blue-200 border-2 p-2 rounded-sm  w-80 md:w-96 ">
+                </div>
+                <div class="mt-3">
+                    <label for="Villa"> villa</label> <br>
+                     <select name="" id="" class="w-80 md:w-96">
+                        <option value="Tn"> Tunisie</option>
+                        <option value="fr"> France</option>
+                     </select>
+                </div>
+    
+                <div class="block  my-2">
+                    <button class="bg-blue-700 p-2 rounded-md text-gray-50 "> Inscription</button>
+                </div>
+    
+            </form>
+         </section>
+     </main>
+
+    <footer class="bg-gray-600">
+         <div class=" flex flex-col   md:flex-row text-white px-5 py-10">
+            <div class="mx-auto">
+                <p > Tous les droits reserver @Copyright 2024</p>
+            </div>
+            <div class="mx-auto">
+                <a  href=""><i class="ri-facebook-circle-line text-4xl"></i></a>
+                <a href=""><i class="ri-instagram-line text-4xl"></i></a>
+                <a href=""><i class="ri-youtube-line text-4xl"></i></a>
+            </div>
+               
+         </div>
+    </footer>
+     <script src="script.js"></script>
+</body>
+</html>
