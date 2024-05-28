@@ -1,0 +1,10 @@
+.main-section{
+    border-top: 1px solid black
+}
+.navbar{
+    margin-top: 2%;
+    border-top: 1px solid blue
+}
+@media (max-width: 1250px) { .main-section{
+    border-top: 1px solid blue;
+} }

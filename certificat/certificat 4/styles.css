@@ -1,0 +1,94 @@
+.nav{
+    list-style-type: none;
+    text-decoration: none;
+    margin: 2%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.nav-link{
+    list-style: none; 
+}
+#header-img{
+    float: left;
+    height:100px;
+    width: 20vw;
+}
+a{
+    text-decoration: none;
+}
+
+.page-wrapper{
+    position: relative;
+}
+.container{
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+}
+#header{
+    position: fixed;
+    top: 0;
+    min-height: 75px;
+    padding: 0px 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #eee;
+    width:100%
+}
+.logo{
+    width: 60vw;
+}
+#nav-bar{
+    width:50%
+}
+#formemail{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 200px;
+    margin-top: 50px;
+}
+#music{
+    text-align: center;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: calc(100% / 3);
+    margin: 10px;
+    border: 1px solid #000;
+    border-radius: 3px;
+}
+.card > .level {
+    background-color: #ddd;
+    color: black;
+    padding: 15px 0;
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.card > ul > li {
+
+    list-style-type: none;
+}
+#abonnement{
+    margin-top: 60px;
+    display: flex;
+    flex-direction: rows;
+    justify-content: center;
+}
+
+@media (min-width: 600px) { 
+    #abonnement{
+        margin-top: 60px;
+        display: flex;
+        flex-direction: rows;
+        justify-content: center;
+    }
+    
+ }

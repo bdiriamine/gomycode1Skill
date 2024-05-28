@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+     <main id="main-doc">
+        <section class="main-section" id="introduction_Angular">
+            <header>Introduction Angular</header>
+                <p>Angular is a platform and framework for building single-page client applications using HTML and TypeScript. Angular is written in TypeScript. It implements core and optional functionality as a set of TypeScript libraries that you import into your applications.
+
+                    The architecture of an Angular application relies on certain fundamental concepts. The basic building Angulars of the Angular framework are Angular components.
+                    
+                    Components define views, which are sets of screen elements that Angular can choose among and modify according to your program logic and data
+                    
+                    Components use services, which provide background functionality not directly related to views such as fetching data. Such services can be injected into components as dependencies, making your code modular, reusable, and efficient.
+                    
+                    Components and services are classes marked with decorators. These decorators provide metadata that tells Angular how to use them.</p>
+            <code> Code Angulars de Introduction </code>
+        </section>
+        <section class="main-section" id="Components_Angular">
+            <header>
+                Components Angular
+            </header>
+            <p>
+                The Angular Router package provides a service that lets you define a navigation path among the different application states and view hierarchies in your application. It is modeled on the familiar browser navigation conventions:
+            </p>
+            <li>Property binding</li>
+            <li>Templates</li>
+            <li>directives</li>
+            <li>data binding</li>
+            <li>Event binding	</li>
+            <code> Code Angulars de Components </code>
+        </section>
+        <section class="main-section" id="Services_Angular"> 
+            <header>
+                Services Angular
+            </header>
+            <p>
+                For data or logic that isn't associated with a specific view, and that you want to share across components, you create a service class. A service class definition is immediately preceded by the @Injectable() decorator. The decorator provides the metadata that allows other providers to be injected as dependencies into your class.
+
+Dependency injection (DI) lets you keep your component classes lean and efficient. They don't fetch data from the server, validate user input, or log directly to the console; they delegate such tasks to services.
+            </p>
+            <code> Code Angulars de Services </code>
+        </section>
+        <section class="main-section" id="Accessibility_Angular">
+            <header>
+                Accessibility Angular
+            </header>
+            <p>
+                The web is used by a wide variety of people, including those who have visual or motor impairments. A variety of assistive technologies are available that make it much easier for these groups to interact with web-based software applications. Also, designing an application to be more accessible generally improves the user experience for all users.
+            </p>
+            <code> Code Angulars de Accessibility</code>
+        </section>
+        <section class="main-section" id="Property_Angular">
+            <header>
+                Property Angular
+            </header>
+              <p>By following a few guidelines, you can use property binding in a way that helps you reduce bugs and keep your code readable.</p>
+                <p>See the live example / download example for a working example containing the code snippets in this guide.</p>
+              <p>Avoid side effects
+                Evaluation of a template expression should have no visible side effects. Use the syntax for template expressions to help avoid side effects. In general, the correct syntax prevents you from assigning a value to anything in a property binding expression. The syntax also prevents you from using increment and decrement operators.</p>
+              <p>An example of producing side effects
+                If you had an expression that changed the value of something else that you were binding to, that change of value would be a side effect. Angular might or might not display the changed value. If Angular does detect the change, it throws an error.
+                
+                As a best practice, use only properties and methods that return values.</p>
+              <p>Return the proper type
+                A template expression should result in the type of value that the target property expects. For example, return:
+                
+                a string, if the target property expects a string
+                a number, if it expects a number
+                an object, if it expects an object.</p>
+              <p>Passing in a string
+                In the following example, the childItem property of the ItemDetailComponent expects a string.
+                
+                src/app/app.component.html
+                content_copy
+                <app-item-detail [childItem]="parentItem"></app-item-detail>
+                Confirm this expectation by looking in the ItemDetailComponent where the @Input() type is string:
+                
+                src/app/item-detail.component.ts (setting the @Input() type)
+                content_copy
+                @Input() childItem = '';
+                The parentItem in AppComponent is a string, which means that the expression, parentItem within [childItem]="parentItem", evaluates to a string.
+                
+                src/app/app.component.ts
+                content_copy
+                parentItem = 'lamp';
+                If parentItem were some other type, you would need to specify childItem @Input() as that type as well.</p>
+              <p>Passing in an object
+                In this example, ItemListComponent is a child component of AppComponent and the items property expects an array of objects.</p>
+               <p>In app.component.ts, currentItems is an array of objects in the same shape as the Item object in items.ts, with an id and a name.</p>
+              <p>By supplying an object in the same shape, you meet the expectations of items when Angular evaluates the expression currentItems.</p>
+               <p>currentItems = [{
+                id: 21,
+                name: 'phone'
+              }];</p>
+              <code> Code Property Angular </code>
+        </section>
+     </main>
+      <div>
+        <nav id="navbar">
+            <header>Angular Documentation</header>
+            <ul>
+              <li><a class="nav-link" href="#introduction_Angular">introduction Angular </a></li>
+              <li>
+                <a class="nav-link" href="#Components_Angular">Components Angular</a>
+              </li>
+              <li>
+                <a class="nav-link" href="#Services_Angular">Services Angular</a>
+              </li>
+              <li><a class="nav-link" href="#Accessibility_Angular">Accessibility Angular</a></li>
+              <li><a class="nav-link" href="#Property_Angular">Property Angular</a></li>
+            </ul>
+          </nav>
+        </div>
+
+</body>
+</html>

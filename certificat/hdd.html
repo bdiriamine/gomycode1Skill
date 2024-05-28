@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>survey</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section id="welcomeid">
+        <h1 id="title"> code gratuit de certification</h1>
+        <p id="description"> Merci Pour votre temps </p>
+    </section>
+
+    <section id="sectionform">
+        <form action="" id="survey-form">
+            <label for="nom" id="name-label">Nom </label> <br>
+            <input type="text" id="name" placeholder="nom" required>  <br>
+            <label for="nom" id="email-label">Email </label>  <br>
+            <input type="email" id="email" placeholder="email" required>   <br>
+            <fieldset>
+                <span>Sexe</span>
+                <div>
+                  <input type="radio" id="male" value="mâle" name="sexe" checked />
+                  <label for="mâle">mâle </label>
+                </div>
+              
+                <div>
+                  <input type="radio" id="femelle" value="femelle" name="sexe" />
+                  <label for="femelle">femelle</label>
+                </div>
+              </fieldset> <br>
+              <label for="diplome"> Diplôme  Universitaire</label> <br>
+              <input type="checkbox" value="oui"/> Oui<br>
+              <input type="checkbox" value="non"/> Non<br>
+              <label for="nom" id="number-label">Age </label>  <br>
+            <input type="number" id="number" min="12" max="30" placeholder="age" required>  <br>
+            <label for="description">description </label>  <br>
+             <textarea name="description" id="description" rows="6" cols="100"></textarea>  <br>
+            <label for="ville"></label>
+            <select name="ville" id="dropdown">
+                <option value="TN">Tunisie</option>
+                <option value="MR">Maroc</option>
+                <option value="EGY">Egypte</option>
+            </select> <br>
+            <input type="submit" id="submit" >
+    </form>
+    </section>
+
+</body>
+</html>
