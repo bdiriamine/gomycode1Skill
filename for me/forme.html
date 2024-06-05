@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QCM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+ 
+<body>
+    <form >
+        <div>
+            <p class="qcm" id="qcm"> Un programme qui convertit le langage assembleur en langage machine est appelé _______?</p>
+            <div id="d1">
+                <input type="radio" name="q1" id="r1" value="1">
+                <label for="r1" id="ra1">Interprèteur </label>
+                <span id="sp1"></span>
+            </div>
+            <div id="d2">
+                <input type="radio" name="q1" id="r2" value="2">
+                <label for="r2" id="ra2">Compilateur</label>
+                <span id="sp2"></span>
+            </div>
+            <div id="d3">
+                <input type="radio" name="q1" id="r3" value="3">
+                <label for="r3" id="ra3">Comparateur</label>
+                <span id="sp3"></span>
+            </div>
+            <div id="d4">
+                <input type="radio" name="q1" id="r4" value="4">
+                <label for="r4" id="ra4">Assembleur</label>
+                <span id="sp4"></span></div>
+            <div id="brep" class="brep">
+
+            </div>
+        </div>
+        <input type="button" value="Verifier" class="valider" onclick="return qcmTest()">
+    </form>
+    <script >
+        function qcmTest() {
+    rep1 = document.getElementById("r1").checked;
+    rep2 = document.getElementById("r2").checked;
+    rep3 = document.getElementById("r3").checked;
+    rep4 = document.getElementById("r4").checked;
+    choix = rep1 == rep2 == rep3 == rep4 == false
+    var breponse = "La bonne reponse est Assembleur"
+    if ((choix == false)) {
+        alert('il faut choisir une reponse')
+        return false
+    } else if (rep4 == true) {
+        document.getElementById("brep").innerHTML = breponse;
+        document.getElementById("sp4").innerHTML = " (correct) ";
+        document.getElementById("d4").style.border = "3px solid green";
+        document.getElementById("ra4").style.color = "green";
+    } else if (rep3 == true) {
+        document.getElementById("brep").innerHTML = breponse;
+        document.getElementById("sp3").innerHTML = " (faux) ";
+        document.getElementById("d3").style.border = "3px solid red";
+        document.getElementById("ra3").style.color = "red";
+        document.getElementById("ra3").style.textDecoration = "line-through";
+    } else if (rep2 == true) {
+        document.getElementById("brep").innerHTML = breponse;
+        document.getElementById("sp2").innerHTML = " (faux) ";
+        document.getElementById("d2").style.border = "3px solid red";
+        document.getElementById("ra2").style.color = "red";
+        document.getElementById("ra2").style.textDecoration = "line-through";
+    } else if (rep1 == true) {
+        document.getElementById("brep").innerHTML = breponse;
+        document.getElementById("sp1").innerHTML = " (faux) ";
+        document.getElementById("d1").style.border = "3px solid red";
+        document.getElementById("ra1").style.color = "red";
+        document.getElementById("ra1").style.textDecoration = "line-through";
+    }
+    return true
+ 
+}
+    </script>
+</body>
+ 
+</html>

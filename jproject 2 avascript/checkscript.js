@@ -109,5 +109,4 @@ function fibonacciSequence(num) {
     }
     return seq;
 }
-
 console.log(fibonacciSequence(7));
