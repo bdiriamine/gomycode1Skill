@@ -1,0 +1,20 @@
+<script>
+    var tableau =[{name: 'amine'} ,{name: 'ahmed'},{name: 'sadak'},{name: 'amine'} ] ;
+    
+    const products = [{name:"Milk",price:15}, {name:"Water", price:9}, {name:"Bread", price:5}];
+
+    const rat = name => tableau.forEach(person=> alert(person.name))
+    const productsmap = ()=>  products.map(product=>({...product, price : product.price+2}))
+    function findperson(str){
+        return tableau.forEach(person=>person.name==str)
+    }
+    ["one", "two", "three"].forEach(elm=>alert(elm))
+    findperson("amine");
+   console.log(productsmap()) ;
+   let { address } = {address:{city:"New York", country:"USA"}};
+
+let {city, country} = address;
+
+console.log(city) // New York
+console.log(country) // USA
+</script>

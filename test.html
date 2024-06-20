@@ -1,0 +1,29 @@
+<script>
+    function inks(inksvar ) {
+    var c = 0;
+       min =  Object.values(inksvar)[0]
+  for (let i in inksvar) {
+   if( Object.values(inksvar)[c]< min){
+    min = Object.values(inksvar)[c] ;
+   }
+   c++;
+  }
+  return min
+    }
+
+
+    
+    const GUEST_LIST = {
+	Randy: "Germany",
+	Karla: "France",
+	Wendy: "Japan",
+	Norman: "England",
+	Sam: "Argentina"
+}
+
+function greeting(name) {
+    if(name) return 'my name is '+Object.keys(name)+"i 'm from '" +Object.values(name)
+	else return 'im a guest'
+}
+console.log(greeting(GUEST_LIST));
+</script>

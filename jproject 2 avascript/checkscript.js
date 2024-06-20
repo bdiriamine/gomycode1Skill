@@ -13,8 +13,10 @@ function countCaracters(tap){
 }
 //----------------------3-------------------------
 function capitalizeWords(paragraph) {
-    return paragraph.split(' ').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
+        let tb = []
+     tb= paragraph.split(' ').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
 }
+
 
 const paragraph = "life is good ";
 const capitalize = capitalizeWords(paragraph);
