@@ -1,0 +1,25 @@
+ALGORITHM algorithm_name
+VAR
+   numbredevoyelles ,nubredemots, numberdecaractaire :INTEGER;
+   numbredevoyelles=numberdecaractaire :=0;
+   nubredemots:=1;
+   phrase:STRING ;
+
+BEGIN
+    read(phrase)
+        WHILE (phrase <>".") DO
+             IF (phrase = " ") THEN
+                nubredemots=nubredemots+1
+             END_IF
+             IF (c in ["a","e","u","i","o","y","A","E","U","I","O","Y"]) THEN
+                numbredevoyelles=numbredevoyelles+1;
+             END_IF
+             IF (phrase <> " ") THEN
+                numberdecaractaire = numberdecaractaire + 1
+             END_IF
+
+        END_WHILE
+        write(numbredevoyelles) ;
+        write(numberdecaractaire) ;
+        write(nubredemots)
+END
