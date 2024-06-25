@@ -1,0 +1,15 @@
+ALGORITHM triParSelection
+VAR
+    i,j,nvcard:INTEGER.
+    tab : ARRAY_OF INTEGER[length];
+BEGIN
+    FOR i FROM 1 TO tab.length-1 STEP 1  DO
+        j=i-1
+        nvcard=tab[i]
+        WHILE (j>=0 and tab[j]<nvcard) DO
+          swap(tab[i],tab[j]) ;
+          nvcard=tab[j]
+          j-- ;
+        END_WHILE
+    END_FOR
+END
