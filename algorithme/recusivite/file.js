@@ -48,7 +48,3 @@ function pui(n, p)
 
 }
 
-console.log(pui(-5,3))
-console.log(leapYear(1900))
-console.log(ticketPrice(20))
-console.log(weatherClothingAdviser(9,true))
